@@ -65,7 +65,8 @@ table {
     right: 0;
     font-size: 0;
     text-align: right;
-    font-family: "Helvetica Neue Light",HelveticaNeue-Light,"Helvetica Neue",Calibri,Helvetica,Arial,sans-serif
+    font-family: "Helvetica Neue Light",HelveticaNeue-Light,"Helvetica Neue",Calibri,Helvetica,Arial,sans-serif;
+    text-shadow: 0 0 1px #333
 }
 
 #name {
@@ -83,6 +84,10 @@ table {
     cursor: pointer;
     width: 25%;
     font-size: 45px
+}
+
+.nav {
+    text-shadow: 0 0 0
 }
 
 .nav-checked {
@@ -104,12 +109,12 @@ p,ul {
 }
 
 #resume {
-    background: url(images/menu_2.png) left bottom no-repeat #FDE480;
+    background: url(images/menu_2.png) left bottom no-repeat #B7D76A;
     background-size: 60%
 }
 
 #works {
-    background: url(images/menu_4.png) left bottom no-repeat #B7D76A;
+    background: url(images/menu_4.png) left bottom no-repeat #FDE480;
     background-size: 60%
 }
 
@@ -180,12 +185,12 @@ li {
 
 .section-resume {
     opacity: 0;
-    background: #FDE480
+    background: #B7D76A
 }
 
 .section-works {
     opacity: 0;
-    background: #B7D76A
+    background: #FDE480
 }
 
 .section-contact {
@@ -301,8 +306,11 @@ li {
 .worksTxt {
     font-size: 23px;
     width: 50%;
+    height: 100%;
     left: 100%;
-    margin: auto
+    margin: auto;
+    background: #565F7C;
+    padding: 20px 0 0
 }
 
 .worksElement:hover .worksTxt {
