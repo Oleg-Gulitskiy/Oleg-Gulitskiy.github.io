@@ -4,81 +4,166 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="style.css" rel="styleSheet">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Roboto+Mono:300&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-<div class="wrapper">
-  <div class="main"><a id="name">Олег Гулицкий</a><br><a id="about" class="nav">О себе</a><a id="resume" class="nav">Резюме</a><a id="works" class="nav">Портфолио</a><a id="contact" class="nav">Контакты</a>
-    <div class="info">
-      <div class="info-section section-about"><img src="images/about_img.jpg" class="about__img">
-        <h1>Веб-разработчик</h1>
-        <p>
-          Основной практический опыт связан с адаптивной версткой на HTML и CSS,
-          использованием и доработкой готовых решений на JavaScript.
-        </p>
-        <p>
-          Есть опыт работы с различными CMS и создания 'с нуля' небольших проектов. Присутствует базовое
-          понимание работы с Node.js.
-        </p>
-        <p>
-          При разработке использую: таск-менеджер Gulp, язык шаблонов Jade, пакетные
-          менеджеры npm и Bower, VCS Git.
-        </p>
-        <p>Постоянно совершенствуюсь - пробую новые инструменты и практики.</p>
-        <p>Держу руку на пульсе современных тенденции в ИТ-индустрии.</p>
-        <p>Открыт для предложений о любом сотрудничестве.</p>
-      </div>
-      <div class="info-section section-resume">
-        <h1>Квалификация:</h1>
-        <ul>
-          <li>Вёрстка на HTML и CSS;</li>
-          <li>Использование и доработка готовых решений на JavaScript;</li>
-          <li>Базовые знания препроцессоров LESS, Stylus;</li>
-          <li>Базовое понимание работы с Node.js;</li>
-          <li>Работа с готовыми макетами;</li>
-          <li>Опыт работы с различными CMS;</li>
-          <li>Уровень английского: Pre-Intermediate;</li>
-        </ul>
-        <h1>Технические навыки:</h1>
-        <ul>
-          <li>HTML, CSS, JavaScript, Gulp, Jade, Less, Stylus, Node.js;</li>
-          <li>CMS: WordPress, OpenCart;</li>
-          <li>VCS: Git;</li>
-          <li>IDE: WebStorm;</li>
-        </ul>
-        <h1>Образование:</h1>
-        <p> 2008-2013 – МГИУ. Специальность: "Экономика и управление на предприятии в машиностроении"</p>
-        <h1>Самообразование:</h1>
-        <p>
-          Проходил курсы на htmlacademy.ru
-          (<a href="https://htmlacademy.ru/profile/id11540">профиль на сайте с перечислением пройденных курсов</a>).
-        </p>
-        <p>
-          Изучаю профильные статьи и книги (Кит Джереми
-          "HTML5 для веб-дизайнеров", Люк Вроблевски "Сначала мобильные", Итан Маркотт
-          "Отзывчивый веб-дизайн", Marjin Haverbeke "Выразительный JavaScript")
-        </p>
-        <h1>Личные качества:</h1>
-        <ul>
-          <li>Постоянное саморазвитие;</li>
-          <li>Коммуникабельность;</li>
-          <li>Нацеленность на результат: при написании кода уделяю внимание его тестированию, стараюсь достичь эффективного решения задачи;</li>
-        </ul><a href="Oleg_Gulitskiy_front-end_developer.pdf" class="downloadButton">Скачать в .pdf</a>
-      </div>
-      <div class="info-section section-works">
-        <div class="works"><a href="http://oleg-gulitskiy.github.io/flat-ui-profile" class="worksElement"><img src="/images/works/1.1.jpg" class="worksImg1"><img src="/images/works/1.2.jpg" class="worksImg2">
-          <sspan class="worksTxt">Flat ui profile</sspan></a><a href="http://oleg-gulitskiy.github.io/technopark-demo" class="worksElement"><img src="/images/works/2.1.jpg" class="worksImg1"><img src="/images/works/2.2.jpg" class="worksImg2">
-          <sspan class="worksTxt">Технопарк</sspan></a></div>
-      </div>
-      <div class="info-section section-contact">
-        <div class="contacts">
-          <div class="contactsWrapper"><a href="callto:+375257679800" class="phone">Телефон: + 375 25 767 98 00</a></div>
-          <div class="contactsWrapper"><a href="mailto:oleg.gulitskiy@gmail.com" class="mail">E-mail: oleg.gulitskiy@gmail.com</a></div>
-          <div class="contactsWrapper"><a href="skype:live:oleg.gulitskiy" class="skype">Skype: live:oleg.gulitskiy</a></div>
-        </div>
-      </div>
+<section id="about" class="contentSection">
+  <div class="sectionTitle">
+    <div class="sectionTitle__separator"></div>
+    <h1 class="sectionTitle__text">О себе</h1>
+  </div>
+  <p class="aboutText">
+    Основной практический опыт связан с адаптивной версткой на HTML и CSS, использованием и доработкой готовых решений на JavaScript.
+    Есть опыт работы с различными CMS и создания 'с нуля' небольших проектов. Присутствует базовое понимание работы с Node.js.
+  </p>
+  <div class="aboutArticles">
+    <div class="aboutArticle">
+      <div class="aboutArticle__icon"></div>
+      <p class="aboutArticle__text">При разработке использую: таск-менеджер Gulp, шаблонизатор Jade, пакетные менеджеры npm и Bower, VCS Git.</p>
+    </div>
+    <div class="aboutArticle">
+      <div class="aboutArticle__icon"></div>
+      <p class="aboutArticle__text">
+        Постоянно совершенствуюсь — пробую новые инструменты и практики.
+        Держу руку на пульсе современных тенденции в ИТ-индустрии.
+      </p>
+    </div>
+    <div class="aboutArticle">
+      <div class="aboutArticle__icon"></div>
+      <p class="aboutArticle__text">Открыт для предложений о любом сотрудничестве.</p>
     </div>
   </div>
-</div>
-<script src="script.js"></script>
+</section>
+<section id="resume" class="contentSection">
+  <div class="sectionTitle">
+    <div class="sectionTitle__separator"></div>
+    <h1 class="sectionTitle__text">Резюме</h1>
+  </div>
+  <div class="resumeList">
+    <h2 class="resumeList__title">Квалификация</h2>
+    <ul>
+      <li class="resumeList__item">Вёрстка на HTML и CSS;</li>
+      <li class="resumeList__item">Использование и доработка готовых решений на JavaScript;</li>
+      <li class="resumeList__item">Базовые знания препроцессоров LESS, Stylus;</li>
+      <li class="resumeList__item">Базовое понимание работы с Node.js;</li>
+      <li class="resumeList__item">Работа с готовыми макетами;</li>
+      <li class="resumeList__item">Опыт работы с различными CMS;</li>
+      <li class="resumeList__item">Уровень английского: Pre-Intermediate;</li>
+    </ul>
+  </div>
+  <div class="resumeList">
+    <h2 class="resumeList__title">Технические навыки</h2>
+    <ul>
+      <li class="resumeList__item">HTML, CSS, JavaScript, Gulp, Jade, Less, Stylus, Node.js;</li>
+      <li class="resumeList__item">CMS: WordPress, OpenCart;</li>
+      <li class="resumeList__item">VCS: Git;</li>
+      <li class="resumeList__item">IDE: WebStorm;</li>
+    </ul>
+  </div>
+  <div class="resumeList">
+    <h2 class="resumeList__title">Образование</h2>
+    <ul>
+      <li class="resumeList__item">2008-2013 — МГИУ. Специальность: "Экономика и управление на предприятии в машиностроении"</li>
+    </ul>
+  </div>
+  <div class="resumeList">
+    <h2 class="resumeList__title">Самообразование</h2>
+    <ul>
+      <li class="resumeList__item">Проходил курсы на htmlacademy.ru (<a href="https://htmlacademy.ru/profile/id11540">профиль на сайте с перечислением пройденных курсов</a>);</li>
+      <li class="resumeList__item">
+        Изучаю профильные статьи и книги (Кит Джереми "HTML5 для веб-дизайнеров",
+        Люк Вроблевски "Сначала мобильные", Итан Маркотт "Отзывчивый веб-дизайн", Marjin Haverbeke
+        "Выразительный JavaScript");
+      </li>
+    </ul>
+  </div>
+  <div class="resumeList">
+    <h2 class="resumeList__title">Личные качества</h2>
+    <ul>
+      <li class="resumeList__item">Постоянное саморазвитие;</li>
+      <li class="resumeList__item">Коммуникабельность;</li>
+      <li class="resumeList__item">
+        Нацеленность на результат: при написании кода уделяю внимание его
+        тестированию, стараюсь достичь эффективного решения задачи;
+      </li>
+    </ul>
+  </div><a href="http://oleg-gulitskiy.github.io/Oleg_Gulitskiy_front-end_developer.pdf" class="resumeDownload">Резюме в .pdf</a>
+</section>
+<section id="portfolio" class="contentSection">
+  <div class="sectionTitle">
+    <div class="sectionTitle__separator"></div>
+    <h1 class="sectionTitle__text">Портфолио</h1>
+  </div>
+  <ul class="portfolioList">
+    <li><a class="portfolioList__item"><img src="/img/portfolioDefault.jpg" alt="Portfolio Image" class="portfolioList__itemImg">
+      <div class="portfolioList__itemDescription">
+        <h2 class="portfolioList__itemDescriptionTitle">Portfolio Title</h2>
+        <p class="portfolioList__itemDescriptionText">Portfolio some text description</p>
+      </div></a></li>
+    <li><a class="portfolioList__item"><img src="/img/portfolioDefault.jpg" alt="Portfolio Image" class="portfolioList__itemImg">
+      <div class="portfolioList__itemDescription"></div></a></li>
+    <li><a class="portfolioList__item"><img src="/img/portfolioDefault.jpg" alt="Portfolio Image" class="portfolioList__itemImg">
+      <div class="portfolioList__itemDescription"></div></a></li>
+    <li><a class="portfolioList__item"><img src="/img/portfolioDefault.jpg" alt="Portfolio Image" class="portfolioList__itemImg">
+      <div class="portfolioList__itemDescription"></div></a></li>
+    <li><a class="portfolioList__item"><img src="/img/portfolioDefault.jpg" alt="Portfolio Image" class="portfolioList__itemImg">
+      <div class="portfolioList__itemDescription"></div></a></li>
+    <li><a class="portfolioList__item"><img src="/img/portfolioDefault.jpg" alt="Portfolio Image" class="portfolioList__itemImg">
+      <div class="portfolioList__itemDescription"></div></a></li>
+    <li><a class="portfolioList__item"><img src="/img/portfolioDefault.jpg" alt="Portfolio Image" class="portfolioList__itemImg">
+      <div class="portfolioList__itemDescription"></div></a></li>
+    <li><a class="portfolioList__item"><img src="/img/portfolioDefault.jpg" alt="Portfolio Image" class="portfolioList__itemImg">
+      <div class="portfolioList__itemDescription"></div></a></li>
+    <li><a class="portfolioList__item"><img src="/img/portfolioDefault.jpg" alt="Portfolio Image" class="portfolioList__itemImg">
+      <div class="portfolioList__itemDescription"></div></a></li>
+  </ul>
+</section>
+<section id="contact" class="contentSection">
+  <div class="sectionTitle">
+    <div class="sectionTitle__separator"></div>
+    <h1 class="sectionTitle__text">Контакты</h1>
+  </div>
+  <div class="contactItems">
+    <div class="contactItem">
+      <div class="contactItem__icon phone"></div><a href="callto:+375257679800" class="contactItem__link">+ 375 25 767 98 00</a>
+    </div>
+    <div class="contactItem">
+      <div class="contactItem__icon mail"></div><a href="mailto:oleg.gulitskiy@gmail.com" class="contactItem__link">oleg.gulitskiy@gmail.com</a>
+    </div>
+    <div class="contactItem">
+      <div class="contactItem__icon skype"></div><a href="skype:live:oleg.gulitskiy" class="contactItem__link">live:oleg.gulitskiy</a>
+    </div>
+  </div>
+  <!--
+  form.contactForm
+  input.contactForm__input(type="email" name="email" id="email" placeholder="email")
+  input.contactForm__input(type="text" name="subject" id="subject" placeholder="subject")
+  textarea.contactForm__textarea(name="message" id="message" placeholder="message")
+  button.contactForm__button(id='send_mail') Send
+  -->
+</section>
+<section id="main">
+  <div class="mainAvatar"></div>
+  <h1 class="mainTitle">Олег Гулицкий</h1>
+  <p class="mainText">Front-end разработчик.</p>
+  <ul class="mainMenu">
+    <li id="mmButtonAbout" class="mainMenu__button"><a>О себе</a></li>
+    <li id="mmButtonResume" class="mainMenu__button"><a>Резюме</a></li>
+    <li id="mmButtonPortfolio" class="mainMenu__button"><a>Портфолио</a></li>
+    <li id="mmButtonContact" class="mainMenu__button"><a>Контакты</a></li>
+  </ul>
+</section>
+<ul class="adaptiveMenu">
+  <li><a id="amButtonMain" class="adaptiveMenu__button">Main</a></li>
+  <li><a id="amButtonAbout" class="adaptiveMenu__button">About</a></li>
+  <li><a id="amButtonResume" class="adaptiveMenu__button">Resume</a></li>
+  <li><a id="amButtonPortfolio" class="adaptiveMenu__button">Portfolio</a></li>
+  <li><a id="amButtonContact" class="adaptiveMenu__button">Contact</a></li>
+</ul>
 </body>
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/script.js"></script>
 </html>
